@@ -1,0 +1,60 @@
+diff --git a/node_modules/react-native-webview/apple/RNCWebView.m b/node_modules/react-native-webview/apple/RNCWebView.m
+index 02b4238..b7554c2 100644
+--- a/node_modules/react-native-webview/apple/RNCWebView.m
++++ b/node_modules/react-native-webview/apple/RNCWebView.m
+@@ -174,6 +174,11 @@ - (instancetype)initWithFrame:(CGRect)frame
+                                                selector:@selector(hideFullScreenVideoStatusBars)
+                                                    name:UIWindowDidBecomeHiddenNotification
+                                                  object:nil];
++      // https://github.com/react-native-community/react-native-webview/issues/934
++      [[NSNotificationCenter defaultCenter] addObserver:self
++                                                selector:@selector(menuWillShow:)
++                                                    name:UIMenuControllerWillShowMenuNotification
++                                                object:[UIMenuController sharedMenuController]];
+ 
+   }
+ #endif // !TARGET_OS_OSX
+@@ -183,6 +188,35 @@ - (instancetype)initWithFrame:(CGRect)frame
+ - (void)dealloc
+ {
+   [[NSNotificationCenter defaultCenter] removeObserver:self];
++    
++    // https://github.com/react-native-community/react-native-webview/issues/934
++  [[NSNotificationCenter defaultCenter] removeObserver:self
++                                           name:UIMenuControllerWillShowMenuNotification
++                                           object:[UIMenuController sharedMenuController]];
++}
++
++
++ // https://github.com/react-native-community/react-native-webview/issues/934
++-(void)findUI:(UIView*) view{
++    if([@"UICalloutBar" isEqualToString:[[view class] description]]){
++        [view removeFromSuperview ];
++        return;
++    }
++
++    for(UIView* subview in view.subviews){
++        [self findUI: subview];
++    }
++}
++
++ // https://github.com/react-native-community/react-native-webview/issues/934
++-(void)menuWillShow:(NSNotification *)notification
++{
++    NSArray* windows = [[UIApplication sharedApplication] windows];
++    for(UIWindow* window in windows){
++        if([@"UITextEffectsWindow" isEqualToString:[[window class] description]]){
++            [self findUI:window];
++        }
++    }
+ }
+ 
+ /**
+@@ -400,6 +434,7 @@ - (void)setBackgroundColor:(RCTUIColor *)backgroundColor
+   _webView.scrollView.backgroundColor = backgroundColor;
+   _webView.backgroundColor = backgroundColor;
+ #else
++  // https://stackoverflow.com/questions/40007753/macos-wkwebview-background-transparency
+   // https://stackoverflow.com/questions/40007753/macos-wkwebview-background-transparency
+   NSOperatingSystemVersion version = { 10, 12, 0 };
+   if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:version]) {
