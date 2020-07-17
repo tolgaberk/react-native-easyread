@@ -1,4 +1,4 @@
-const types: MessageType = {
+const types = {
   // WINDOW EVENTS
   ON_LOAD: 'ON_LOAD',
   ON_LOAD_END: 'ON_LOAD_END',
@@ -77,7 +77,3 @@ const types: MessageType = {
 };
 
 export default types;
-
-type MessageType = {
-  [key: string]: string;
-};

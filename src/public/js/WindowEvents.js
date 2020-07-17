@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import MessageListener from './MessageListener';
 
 class WindowController {
@@ -29,5 +30,4 @@ class DocumentController {
     document[str] = func;
   }
 }
-
-module.exports = { WindowController, DocumentController };
+module.exports = { DocumentController, WindowController };

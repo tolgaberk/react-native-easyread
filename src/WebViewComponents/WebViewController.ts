@@ -12,11 +12,11 @@ export default class WebViewController {
     WebViewController.webViewRef.reload();
   }
 
-  static setUpWebView(sendConfirmation: boolean): CallableFunction {
-    return (_: WebViewNavigationEvent): void => {
-      WebViewController.webViewRef.injectJavaScript(`(function(){
+  static setUpWebView = (sendConfirmation: boolean) => (
+    _: WebViewNavigationEvent,
+  ): void => {
+    WebViewController.webViewRef.injectJavaScript(`(function(){
       window.sendConfirmation = ${sendConfirmation}
     })(); true;`);
-    };
-  }
+  };
 }

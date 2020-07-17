@@ -3,7 +3,7 @@ import WebViewController from './WebViewController';
 
 interface Message {
   type: string;
-  data: any;
+  data: { [propName: string]: unknown };
 }
 
 class Message {

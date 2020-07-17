@@ -37,7 +37,7 @@ class MessageListener {
         },
       };
       MessageListener.MessageListeners.push(listener);
-      console.log(MessageListener.MessageListeners);
+      // console.log(MessageListener.MessageListeners);
       return listener.remove;
     }
     throw new Error(

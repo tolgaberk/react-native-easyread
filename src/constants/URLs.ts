@@ -1,7 +1,3 @@
-import RNFS from 'react-native-fs';
-import { Platform } from 'react-native';
-import prettyPrint from '../helpers/prettyLog';
-
 const htmlUrl = 'index.html';
 
 // (async () => {

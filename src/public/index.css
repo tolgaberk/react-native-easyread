@@ -1,9 +1,1163 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: aliceblue;
+  -webkit-touch-callout: none;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: transparent;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 body {
-  font-size: 3rem;
+  padding: 0px 0px;
+}
+mark {
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+}
+strong {
+  font-weight: bold !important;
+}
+h1 {
+  font-size: 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 0px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 0px;
+  text-align: left;
+}
+
+h5 {
+  font-size: 0px;
+  text-align: left;
+  text-indent: 2em;
+}
+h6 {
+  font-size: 18px;
+  text-align: right;
+  border-bottom: 4px double firebrick;
+}
+
+p2 {
+  /*Tab'ı olmayan paragraf*/
+  font-family: 'Times New Roman';
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+p3 {
+  /*Ortalanmış paragraf*/
+  font-family: 'Times New Roman';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+p4 {
+  /*Sağ Alt İsim Alanı*/
+  font-family: 'Times New Roman';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 40%;
+  line-height: 1.4;
+}
+
+p5 {
+  /*Madde Sıralamalı*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -0.75em;
+  font-size: 20px;
+  padding-left: 1.5em;
+  line-height: 1.4;
+}
+p5a {
+  /*Madde Sıralamalı şiir için*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -0.75em;
+  font-size: 20px;
+  padding-left: 2em;
+}
+
+p6 {
+  /*Madde Sıralamalı Ara Paragraflar*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 1.5em;
+  line-height: 1.4;
+}
+
+p7 {
+  /*Sağdan Soldan Kırpılmış Paragraflar*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 1.4;
+}
+
+p8 {
+  /*Sağdan Soldan Kırpılmış Paragraflar tab'ı olan*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 1em;
+  font-size: 20px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  line-height: 1.4;
+}
+
+p9 {
+  /*tab'ı Büyük diğer satırlar 130%*/
+  font-family: 'Times New Roman';
+  display: block;
+  text-indent: 4em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+p10 {
+  /*tab'ı Büyük diğer satırlar da sola alınmış*/
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 2em;
+  font-size: 20px;
+  padding-left: 1.5em;
+  line-height: 1.4;
+}
+
+p11 {
+  /*Sağdan Soldan Kırpılmış Paragraflar Ortalanmış*/
+  font-family: 'Times New Roman';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 1.4;
+}
+
+en1 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 4em;
+  line-height: 1.4;
+}
+
+en2 {
+  font-family: 'Times New Roman';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+en3 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 2em;
+  line-height: 1.4;
+}
+
+en4 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -3em;
+  font-size: 20px;
+  padding-left: 6em;
+  line-height: 1.4;
+}
+
+en5 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -5em;
+  font-size: 20px;
+  padding-left: 6em;
+  line-height: 1.4;
+}
+
+en6 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -2em;
+  font-size: 20px;
+  padding-left: 6em;
+  line-height: 1.4;
+}
+
+en7 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -1em;
+  font-size: 20px;
+  padding-left: 6em;
+  line-height: 1.4;
+}
+
+en8 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  padding-left: 6em;
+  line-height: 1.4;
+}
+
+en9 {
+  font-family: 'Times New Roman';
+  text-align: justify;
+  display: block;
+  text-indent: -1em;
+  font-size: 20px;
+  padding-left: 3em;
+  line-height: 1.4;
+}
+
+de1 {
+  /*Küçük Font Sağa Dayalı Bilgi Alanı*/
+  font-family: 'Souvenir Lt BT';
+  padding-left: 25%;
+  text-align: justify;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de2 {
+  /*Tam Sağa Dayalı Paragraf*/
+  font-family: 'Souvenir Lt BT';
+  text-align: right;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de3 {
+  /*Soldan Sağdan %25 Açık Paragraf*/
+  font-family: 'Times New Roman';
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: justify;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de4 {
+  /*Soldan %25 Açık Ortalanmış Paragraf*/
+  font-family: 'Times New Roman';
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de5 {
+  /*Soldan Sağdan %25 Açık Tablı Paragraf*/
+  font-family: 'Times New Roman';
+  padding-left: 25%;
+  padding-right: 25%;
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de6 {
+  /*Sağdan Soldan Kırpılmış Sağa Dayalı 	*/
+  font-family: 'Times New Roman';
+  text-align: right;
+  text-indent: 0em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+de7 {
+  /*Tab'lı d1 Küçük Font Sağdan kesilmiş Bilgi Alanı*/
+  font-family: 'Times New Roman';
+  padding-left: 25%;
+  text-align: justify;
+  text-indent: 0em;
+  font-size: 18px;
+  display: block;
+  padding-right: 4em;
+  line-height: 1.4;
+}
+
+de8 {
+  /*Küçük Font Sağa Dayalı Bilgi Alanı*/
+  font-family: 'Times New Roman';
+  padding-left: 25%;
+  text-align: justify;
+  font-size: 18px;
+  display: block;
+  line-height: 1.4;
+}
+
+ar1 {
+  /*Büyük Font Ortalanmış Ayet Metni*/
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar2 {
+  /*Paragraf içi Ayet Metni*/
+  font-size: 30px;
+  direction: ltr;
+  unicode-bidi: embed;
+  line-height: 170%;
+}
+
+ar3 {
+  /*Farisi içi Ayet Metni*/
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar4 {
+  /*Sağa-Sola Dayalı Ayet Metni Paragraf*/
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar5 {
+  /*Sağdan Soldan Açılmış Ayet Metni Paragraf*/
+  text-align: right;
+  padding-right: 25%;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar6 {
+  /*Ayet Metni Sağdan Sola Dayalı 2 Birim Satır Başı Paragraf*/
+  text-align: justify;
+  padding-right: 25%;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar7 {
+  /*Ayet Metni Sağdan Soldan Kırpılmış Paragraflar Ortalanmış*/
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 26px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar8 {
+  /*Sağdan Sola Dayalı Satır Başı Ayet Metni Paragraf*/
+  text-indent: 1em;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ar9 {
+  /*Ayet Metni Soldan %40 Kırpılmış Ortalanmış isim metni*/
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 27px;
+  padding-left: 40%;
+  direction: rtl;
+  line-height: 170%;
+  margin: 3px;
+}
+
+arh {
+  /*Arabi-Farisi Haşiye metni*/
+  color: green;
+  line-height: 170%;
+  font-weight: bold;
+}
+
+ars {
+  /*Evradlarda Sure ismi*/
+  text-align: center;
+  display: block;
+  font-size: 35px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ae2 {
+  /*Evradlarda Paragraf içi Arapça Metin*/
+  font-size: 27px;
+  direction: ltr;
+  line-height: 170%;
+}
+
+ae3 {
+  /*Sağa-Sola Dayalı Arapça Paragraf*/
+  text-align: center;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+ae4 {
+  /*Sağa-Sola Dayalı Arapça Paragraf*/
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+}
+
+fr1 {
+  /*Büyük Font Ortalanmış Farsça Metin*/
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  direction: rtl;
+  line-height: 170%;
+  padding-top: 15px;
+}
+
+fr2 {
+  /*Paragraf içi Farsça Metin*/
+  font-size: 27px;
+  direction: ltr;
+  unicode-bidi: embed;
+  line-height: 170%;
+}
+
+fr3 {
+  /*Küçük Font Ortalanmış Farsça Metin*/
+  text-align: center;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+  padding-top: 15px;
+}
+
+fr4 {
+  /*Sağa-Sola Dayalı Farsça Paragraf*/
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+  padding-top: 15px;
+}
+
+fr5 {
+  /*Sağan Soldan Açılmış Farsça Paragraf*/
+  text-align: justify;
+  padding-right: 25%;
+  font-size: 27px;
+  display: block;
+  direction: rtl;
+  line-height: 170%;
+  padding-top: 15px;
+}
+
+fr6 {
+  /*Paragraf içi Farsça Haşiye Metni*/
+  font-family: 'Hasenat';
+}
+
+fr7 {
+  /*Farsça Sağdan Soldan Kırpılmış Paragraflar Ortalanmış*/
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 26px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  direction: rtl;
+  line-height: 170%;
+  padding-top: 15px;
+}
+
+a1 {
+  display: block;
+  text-indent: 2em;
+  font-size: 22px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a2 {
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a3 {
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a4 {
+  text-align: center;
+  padding-right: 40%;
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a5 {
+  font-size: 25px;
+  direction: rtl;
+  font-weight: bold;
+  line-height: 170%;
+}
+
+a6 {
+  display: block;
+  text-indent: 1em;
+  font-size: 22px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a7 {
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  padding-left: 3em;
+  padding-right: 3em;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a8 {
+  text-align: justify;
+  display: block;
+  text-indent: 2em;
+  font-size: 22px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  direction: rtl;
+  line-height: 170%;
+}
+
+a9 {
+  text-align: justify;
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  direction: rtl;
+  line-height: 170%;
+}
+
+af1 {
+  text-align: justify;
+  display: block;
+  text-indent: -5em;
+  font-size: 22px;
+  direction: rtl;
+  padding-right: 6em;
+  line-height: 170%;
+}
+
+af2 {
+  text-align: justify;
+  display: block;
+  text-indent: -3em;
+  font-size: 22px;
+  direction: rtl;
+  padding-right: 6em;
+  line-height: 170%;
+}
+
+af3 {
+  text-align: justify;
+  display: block;
+  text-indent: -2em;
+  font-size: 22px;
+  direction: rtl;
+  padding-right: 6em;
+  line-height: 170%;
+}
+
+af4 {
+  text-align: justify;
+  display: block;
+  text-indent: -1em;
+  font-size: 22px;
+  direction: rtl;
+  padding-right: 6em;
+  line-height: 170%;
+}
+
+/* ARAPÇALAR */
+
+fc1 {
+  font-size: 23px;
+}
+
+fc2 {
+  /* kirmizi bold karakter */
+  font-weight: bold;
+  /*    font-size:22px; */
+}
+
+fc3 {
+  /*Arapça normalboy siyah bold */
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/*Şiir veya Farsca normalboy karakter, Arapça paragrafların içinde kullanmak için */
+fc4 {
+  font-size: 22px;
+}
+
+afr3 {
+  /* ARAPCADA  Ortalanmış Siir veya Farsca Metin*/
+  text-align: center;
+  font-size: 22px;
+  display: block;
+  direction: rtl;
+}
+
+a3k {
+  /*Arapça orta kirmizi bold */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 22px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+a6k {
+  /* yanbaslik kirmizi bold */
+  text-align: right;
+  display: block;
+  font-weight: bold;
+  text-indent: 1em;
+  font-size: 25px;
+  direction: rtl;
+}
+
+a30 {
+  /*Arapça anabaslik */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 29px;
+  font-family: 'Khalid Art bold';
+  direction: rtl;
+}
+
+a31 {
+  /*Arapça vasat evvel */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 31px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+a32 {
+  /*Arapça vasat sani */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 29px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+a33 {
+  /*Arapça vasat salis */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 27px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+a34 {
+  /*Arapça orta iktibas */
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 25px;
+  direction: rtl;
+  font-weight: bold;
+}
+
+da1 {
+  padding-left: 10%;
+  padding-right: 25%;
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 20px;
+  display: block;
+  direction: rtl;
+}
+
+t1 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+f1 {
+  font-family: 'Barla_001_LivaNur';
+  font-size: 70px;
+}
+
+f1a {
+  font-family: 'Barla_001_LivaNur';
+  font-size: 55px;
+}
+
+f2 {
+  font-family: 'Barla Souvenir BT';
+  font-size: 30px;
+}
+
+f2a {
+  font-family: 'Barla Souvenir BT';
+  font-size: 23px;
+}
+
+f2b {
+  font-family: 'Barla Souvenir BT';
+  font-size: 19px;
+}
+
+f3 {
+  font-size: 24px;
+}
+
+f4 {
+  direction: rtl;
+}
+
+f5 {
+  font-family: 'Barla (c) 072 Aria Script';
+  font-size: 34px;
+}
+
+f6 {
+  font-family: 'Souvenir Lt BT';
+  font-size: 20px;
+}
+
+f7 {
+  font-size: 35px;
+}
+
+f8 {
+}
+
+f9 {
+  font-family: 'Barla (c) 072 Aria Script';
+}
+
+fs1 {
+  font-size: 20px;
+}
+
+fs1a {
+  font-size: 23px;
+}
+
+fs1b {
+  font-size: 25px;
+}
+
+fs2 {
+  font-size: 27px;
+}
+
+fs3 {
+  font-size: 40px;
+}
+
+fs4 {
+  font-size: 18px;
+}
+
+fs5 {
+  font-size: 50px;
+}
+
+fs6 {
+  font-size: 33px;
+}
+
+fs7 {
+  font-size: 0.1px;
+}
+
+es1 {
+  font-family: 'Souvenir Lt BT';
+  display: block;
+  text-indent: 2em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+es2 {
+  font-family: 'Souvenir Lt BT';
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+es3 {
+  font-family: 'Souvenir Lt BT';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+es4 {
+  font-family: 'Souvenir Lt BT';
+  text-align: center;
+  display: block;
+  text-indent: 0em;
+  font-size: 20px;
+  line-height: 1.4;
+  display: block;
+  padding-left: 40%;
+}
+
+es5 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  display: block;
+  text-indent: 2em;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-left: 1.5em;
+}
+
+es6 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-left: 1.5em;
+}
+
+d1 {
+  /*Kitap Kapağı 	Kitap İsmi*/
+  text-align: center;
+  display: block;
+  font-family: 'Barla_001_LivaNur';
+  font-size: 85px;
+  line-height: 1.1em;
+}
+
+d2 {
+  /*Kitap Kapağı Müellif*/
+  text-align: center;
+  display: block;
+  font-family: 'Barla (c) 072 Aria Script';
+  font-size: 30px;
+  line-height: 1.5em;
+}
+
+d3 {
+  /*Kitap Kapağı Neşriyat*/
+  text-align: center;
+  display: block;
+  font-family: 'Barla_001_LivaNur';
+  font-size: 30px;
+}
+
+d4 {
+  /*Kitap Kapağı BSN*/
+  text-align: center;
+  display: block;
+  font-family: 'Barla (c) 072 Aria Script';
+  font-size: 40px;
+  line-height: 1.5em;
+}
+
+hr1 {
+  font-size: 25px;
+  text-align: center;
+  display: block;
+}
+
+footnote {
+  font-size: 1.4ex;
+  height: 0;
+  line-height: 1;
+  vertical-align: super;
+  position: relative;
+}
+
+ft1 {
+  display: block;
+  text-indent: 2em;
+  font-size: 16px;
+}
+
+ft2 {
+  text-align: right;
+  display: block;
+  text-indent: 0em;
+  font-size: 16px;
+  padding-right: 25%;
+}
+
+ft3 {
+  /* Haşiye referansı*/
+  text-indent: 0em;
+  font-size: 14px;
+  color: #004db1;
+}
+
+ft4 {
+  /* Sayfa Numarası solunda bölüm ismi*/
+  margin-left: 2px;
+  position: relative;
+  float: left;
+}
+
+dp1 {
+  /* Metin içi Haşiye ifadesi*/
+  font-size: 18px;
+  font-family: 'Souvenir Lt BT';
+}
+
+#hsy {
+  /* Hâşiye metni */
+  text-align: left;
+  color: green;
+  padding-left: 5px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+blockquote {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  text-indent: 1em;
+  font-size: 20px;
+  line-height: 130%;
+  border-left: 0.2rem solid dodgerblue;
+}
+
+sup {
+  /*Üslü İfade*/
+  font-family: 'Barla Souvenir BT';
+  font-size: 19px;
+  font-weight: bolder;
+  text-indent: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+/* #borderimg { */
+/*Çerçeve Çizme*/
+/* border: 50px solid $ {
+    !isios?'transparent' : '';
+  }
+  height: auto !important; */
+/* border-image-source: url(${awaitgetImage(isiOS)}); */
+/* border-image-repeat: repeat; */
+/* border-image-slice: 33%; */
+/* } */
+
+.crY {
+  border-style: ridge;
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px black;
+  -moz-box-shadow: 3px 3px 3px black;
+  -webkit-box-shadow: 3px 3px 3px black;
+  border-width: 5px 5px 5px 5px;
+}
+
+.crK {
+  border-style: ridge;
+  padding: 15px;
+  box-shadow: 3px 3px 3px black;
+  -moz-box-shadow: 3px 3px 3px black;
+  -webkit-box-shadow: 3px 3px 3px black;
+  border-width: 5px 5px 5px 5px;
+}
+
+/*Dar 	Ekranlarda Geniş Metinleri Daraltma*/
+@media only screen and (min-width: 420px) {
+  .condensed {
+    font-family: Times New Roman;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .condensed {
+    font-family: Times New Roman Condensed;
+  }
+}
+
+fr8 {
+  /*Farsça Soldan Girintili Sağa Sola Yaslı Paragraf*/
+  display: block;
+  text-indent: 1em;
+  font-size: 25px;
+  padding-top: 15px;
+  direction: rtl;
+  line-height: 170%;
+}
+
+hsy {
+  /* Hâşiye metni */
+  text-align: left;
+  color: green;
+  font-size: 15px;
+  font-style: italic;
+  padding-left: 5px;
+  display: none;
+}
+
+czNum {
+  font-family: 'Hasenat';
+  font-weight: normal;
+}
+
+arNum {
+  /* speak: none; */
+  font-weight: normal;
+  font-family: 'Hasenat';
+}
+
+adr {
+  font-family: 'Shaikh Hamdullah';
+}
+
+fh {
+  font-family: 'Barla Souvenir BT';
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body::-webkit-scrollbar {
+  width: 0em;
+}
+es7 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  text-indent: 0em;
+  display: block;
+  font-size: 20px;
+  padding-left: 3em;
+  line-height: 130%;
+}
+
+es8 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  display: block;
+  text-indent: 2em;
+  font-size: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
+  line-height: 130%;
+}
+
+es9 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  display: block;
+  text-indent: -1em;
+  font-size: 20px;
+  line-height: 130%;
+  padding-left: 1em;
+}
+
+es10 {
+  font-family: 'Souvenir Lt BT';
+  text-align: justify;
+  display: block;
+  text-indent: 2em;
+  font-size: 20px;
+  padding-left: 3em;
+  line-height: 130%;
 }

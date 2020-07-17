@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import MessageTypes from './Types';
-import Message from './Message';
+import MessageTypes from './Classes/Types';
+import Message from './Classes/Message';
 
 class MessageListener {
   static MessageListeners = [];
